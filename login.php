@@ -11,12 +11,12 @@
 
   if(mysqli_num_rows($result)>0){
     $row = mysqli_fetch_assoc($result);
-    #echo "!!!!";
+    echo "!!!!";
     if($row['pw']==$pw){
       $_SESSION['id']=$id;
-      #echo "@@@@";
+      echo "@@@@";
       if(isset($_SESSION['id'])){
-        #echo "####";
+        echo "####";
 ?>
         <script>
           alert("Login Success!!");
